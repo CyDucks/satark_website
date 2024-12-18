@@ -69,31 +69,31 @@ export default function Home() {
                 icon: MapPin, 
                 title: "Crime Heatmap", 
                 description: "Visualize high-risk areas and plan safer routes.",
-                color: "text-green-500 bg-green-100"
+                color: "text-orange-500 bg-orange-100"
               },
               { 
                 icon: Bell, 
                 title: "Smart Notifications", 
                 description: "Timely alerts about potential dangers nearby.",
-                color: "text-red-500 bg-red-100"
+                color: "text-orange-500 bg-orange-100"
               },
               { 
                 icon: Users, 
                 title: "Community Watch", 
                 description: "Connect with local community for collective safety.",
-                color: "text-blue-500 bg-blue-100"
+                color: "text-orange-500 bg-orange-100"
               },
               { 
                 icon: Lock, 
                 title: "Secure Check-ins", 
                 description: "Let trusted contacts know you're safe instantly.",
-                color: "text-purple-500 bg-purple-100"
+                color: "text-orange-500 bg-orange-100"
               },
               { 
                 icon: Shield, 
                 title: "Conflict Zone Alerts", 
                 description: "Stay informed about ongoing local disturbances.",
-                color: "text-yellow-500 bg-yellow-100"
+                color: "text-orange-500 bg-orange-100"
               },
             ].map((feature, index) => (
               <div 
@@ -169,8 +169,9 @@ export default function Home() {
             Take the first step towards a safer tomorrow. Experience peace of mind with our comprehensive safety app.
           </p>
           <div className="flex justify-center space-x-4">
-            <Link 
-              href="#" 
+            <a 
+              href="/photu.JPG" 
+              download="haha.jpg"
               className="
                 inline-flex items-center 
                 bg-orange-500 hover:bg-orange-600 
@@ -188,7 +189,7 @@ export default function Home() {
               </svg>
               Download App
               <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
