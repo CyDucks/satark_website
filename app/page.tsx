@@ -26,12 +26,29 @@ export default function Home() {
                   Explore Features
                   <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link 
-                  href="#download" 
-                  className="flex items-center justify-center border-2 border-orange-500 text-orange-600 hover:bg-orange-50 font-bold py-3 px-6 rounded-full transition duration-300"
-                >
-                  Download App
-                </Link>
+                <div className="flex justify-center space-x-4">
+            <a 
+              href="/app-debug.apk" 
+              download="app-debug.apk"
+              className="
+                inline-flex items-center 
+                bg-orange-500 hover:bg-orange-600 
+                text-white font-bold 
+                py-3 px-6 rounded-full 
+                text-lg shadow-lg hover:shadow-xl 
+                transition duration-300 group
+              "
+            >
+              <svg viewBox="0 0 24 24" className="fill-current w-6 h-6 mr-2">
+                <path d="M17.523 15.3414C17.523 16.0194 16.9784 16.5638 16.3005 16.5638H8.52661C7.84863 16.5638 7.30408 16.0194 7.30408 15.3414V9.90166C7.30408 9.22369 7.84863 8.67914 8.52661 8.67914H16.3005C16.9784 8.67914 17.523 9.22369 17.523 9.90166V15.3414Z"/>
+                <path d="M6.69813 17.5034L9.23218 15.3414L6.69813 13.1794V17.5034Z"/>
+                <path d="M18.1522 17.5034L15.6181 15.3414L18.1522 13.1794V17.5034Z"/>
+                <path d="M12.4134 6.40015L9.87936 8.56212H14.9474L12.4134 6.40015Z"/>
+              </svg>
+              Download App
+              <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
               </div>
             </div>
             
@@ -170,8 +187,8 @@ export default function Home() {
           </p>
           <div className="flex justify-center space-x-4">
             <a 
-              href="/photu.JPG" 
-              download="haha.jpg"
+              href="/app-debug.apk" 
+              download="app-debug.apk"
               className="
                 inline-flex items-center 
                 bg-orange-500 hover:bg-orange-600 
